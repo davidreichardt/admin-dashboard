@@ -1,8 +1,15 @@
+:root {
+  --yellow: #eca620;
+  --blue: #1c7dca;
+  --background: #dce3ec;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -15,15 +22,30 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 250px 1fr;
   grid-template-rows: 1fr 2fr;
-  background-color: lightblue;
+  height: 100vh;
 }
 
 .side-panel {
   grid-area: 1 / 1 / 3 / 2;
-  background-color: blue;
+  background-color: var(--blue);
+  display: grid;
+  grid-template-rows: repeat(10, 50px);
   border: 1px solid black;
+}
+
+.icon {
+ color : white;
+ ;
+}
+
+.page-item-container {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  font-size: 2rem;
+  color: white;
+
 }
 
 .header {
@@ -34,6 +56,7 @@ html {
 .main {
   grid-area: 2 / 2 / 3 / -1;
   border: 2px solid black;
+  background: var(--background);
 }
 
 .profile-image {
