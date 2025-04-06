@@ -165,12 +165,14 @@ html {
 }
 
 .card-controls img {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   height: 2.5rem;
   width: auto;
 }
 
-.projects-heading {
+.projects-heading,
+.announcements-heading,
+.trending-heading {
   grid-area: 1 / 1 / 2 / -1;
   align-self: center;
   margin: 2rem 0 1rem;
@@ -185,4 +187,28 @@ html {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   gap: 2rem;
+}
+
+.announcements-content {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 10px 1fr 10px 1fr;
+  width: 40rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.border {
+  height: 1px;
+  border: 0.5px solid rgba(0, 0, 0, 0.6);
+}
+
+.announcement-title {
+  margin: 1px 0;
+}
+
+.announcement {
+  margin-bottom: 2rem;
 }
