@@ -212,3 +212,28 @@ html {
 .announcement {
   margin-bottom: 2rem;
 }
+
+.trending-container {
+  grid-area: 2 / 2 / 3 / -1;
+}
+
+.trending {
+  display: grid;
+  grid-template: repeat(4, 1fr);
+  gap: 2rem;
+  width: 40rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.trending-project {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 2rem;
+}
+
+.trending-project img {
+  align-self: center;
+}
